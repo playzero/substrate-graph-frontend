@@ -5,6 +5,7 @@
   "author": "Parity Technologies <admin@parity.io>",
   "license": "Unlicense",
   "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
     "@polkadot/api": "^1.17.2",
     "@polkadot/extension-dapp": "^0.25.1",
     "@polkadot/types": "^1.17.2",
@@ -12,6 +13,12 @@
     "@polkadot/ui-settings": "^0.53.1",
     "@polkadot/util": "^2.12.2",
     "@polkadot/util-crypto": "^2.12.2",
+    "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-link-ws": "^1.0.20",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.10.4",
+    "isomorphic-unfetch": "^3.0.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.11.0",
     "react": "^16.12.0",
@@ -19,7 +26,8 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.0"
+    "semantic-ui-react": "^0.88.0",
+    "subscriptions-transport-ws": "^0.9.17"
   },
   "devDependencies": {
     "eslint-config-standard": "^14.1.0",

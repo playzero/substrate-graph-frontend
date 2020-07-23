@@ -16,6 +16,8 @@ import TemplateModule from './TemplateModule';
 import Transfer from './Transfer';
 import Upgrade from './Upgrade';
 
+import SubstrateGraph from './SubstrateGraph';
+
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
   const { apiState, keyring, keyringState, apiError } = useSubstrate();
@@ -55,6 +57,11 @@ function Main () {
       </Sticky>
       <Container>
         <Grid stackable columns='equal'>
+
+          <Grid.Row stretched>
+            <SubstrateGraph />
+          </Grid.Row>
+
           <Grid.Row stretched>
             <NodeInfo />
             <Metadata />
